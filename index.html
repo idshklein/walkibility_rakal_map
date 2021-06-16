@@ -62,7 +62,7 @@
                         <td colspan="2">' + (feature.properties['cat'] !== null ? autolinker.link(feature.properties['cat'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['distance_from_station'] !== null ? autolinker.link(feature.properties['distance_from_station'].toLocaleString()) : '') + '</td>\
+                        <td colspan="2"> distance_from_station:' + (feature.properties['distance_from_station'] !== null ? autolinker.link(feature.properties['distance_from_station'].toLocaleString()) : '') + '</td>\
                     </tr>\
                 </table>';
             layer.bindPopup(popupContent, {maxHeight: 400});
